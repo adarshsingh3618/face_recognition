@@ -1,0 +1,27 @@
+2025-09-17 16:08:37,668 ERROR: Database operation failed: module 'db' has no attribute 'show_all_students'
+2025-09-17 16:08:41,665 ERROR: Attendance failed: mark_attendance() missing 1 required positional argument: 'student_name'
+2025-09-17 16:08:45,316 ERROR: Recognition failed: recognize_faces() missing 3 required positional arguments: 'known_encodings', 'student_names', and 'marked_set'
+2025-09-17 16:08:59,359 ERROR: Recognition failed: recognize_faces() missing 3 required positional arguments: 'known_encodings', 'student_names', and 'marked_set'
+2025-09-17 16:10:19,777 ERROR: Recognition failed: recognize_faces() missing 3 required positional arguments: 'known_encodings', 'student_names', and 'marked_set'
+2025-09-17 16:16:37,480 ERROR: Recognition failed: recognize_faces() missing 3 required positional arguments: 'known_encodings', 'student_names', and 'marked_set'
+2025-09-17 16:17:57,930 ERROR: Attendance failed: mark_attendance() missing 1 required positional argument: 'student_name'
+2025-09-17 16:18:15,775 ERROR: Database operation failed: module 'db' has no attribute 'show_all_students'
+2025-09-18 22:25:39,437 ERROR: Database operation failed: module 'db' has no attribute 'show_all_students'
+2025-09-19 13:57:29,383 ERROR: Recognition failed: recognize_faces() missing 3 required positional arguments: 'known_encodings', 'student_names', and 'marked_set'
+2025-09-19 15:08:43,955 ERROR: Recognition failed: recognize_faces() missing 3 required positional arguments: 'known_encodings', 'student_names', and 'marked_set'
+2025-09-19 15:09:07,400 ERROR: Database operation failed: module 'db' has no attribute 'show_all_students'
+2025-11-03 10:17:03,587 ERROR: Recognition failed: recognize_faces() missing 1 required positional argument: 'status_messages'
+2025-11-17 09:36:38,267 ERROR: Recognition failed: module 'recognition' has no attribute 'recognize_faces'
+2025-11-17 09:36:41,405 ERROR: Attendance failed: mark_attendance() missing 1 required positional argument: 'student_name'
+2025-11-17 09:36:47,291 ERROR: Database operation failed: module 'db' has no attribute 'show_all_students'
+2025-11-17 09:45:35,162 ERROR: Recognition failed: name 'face_recognition' is not defined
+2025-11-17 09:49:32,550 ERROR: DB error: module 'db' has no attribute 'show_all_students'
+2025-11-17 10:28:41,719 ERROR: Recognition failed: name 'face_recognition' is not defined
+2025-11-17 10:28:52,404 ERROR: DB error: module 'db' has no attribute 'show_all_students'
+2025-11-17 10:29:22,664 ERROR: DB error: module 'db' has no attribute 'show_all_students'
+2025-11-17 10:29:33,878 ERROR: Recognition failed: name 'face_recognition' is not defined
+2025-11-17 10:35:15,761 ERROR: Recognition failed: module 'recognition' has no attribute 'face_locations'
+2025-11-17 10:37:28,980 ERROR: Error during recognition: Unknown C++ exception from OpenCV code
+2025-11-17 10:44:15,160 ERROR: Error during recognition: Unknown C++ exception from OpenCV code
+2025-11-17 10:49:44,884 ERROR: DB error: module 'db' has no attribute 'show_all_students'
+2025-11-17 10:49:48,973 ERROR: DB error: module 'db' has no attribute 'show_all_students'
