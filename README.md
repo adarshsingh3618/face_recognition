@@ -1,94 +1,95 @@
-🧑‍🏫 Face Recognition Attendance System
-A Python-based real-time face recognition project that automatically marks attendance and stores it with timestamps.
-This project uses OpenCV, face_recognition, and MySQL to detect faces, save attendance logs, and manage a database of registered students.
-Useful for colleges, classrooms, labs, offices, and automated attendance systems.
-🚀 Features
-🎥 Real-time face recognition using webcam
-🧠 Uses the powerful face_recognition Python library
-🗂 Automatically marks attendance with name, ID, time, and date
-💾 Stores student data in MySQL database
-🏷 Loads face images from ImagesAttendance/ folder
-🖼 GUI to add a new student with image
-📁 Saves attendance logs in the attendance/ folder
-🐍 Easy to run on any system with Python and MySQL installed
-🧩 Project Structure
+# 📘 Face Recognition Attendance System
+A complete attendance management system using **Python**, **OpenCV**, **Face Recognition**, and **MySQL** with a GUI built in **Tkinter**.
+
+## 🚀 Features
+- Face Recognition with 2‑second verification  
+- Automatic attendance marking  
+- Add Students with webcam capture  
+- Real-time status panel  
+- MySQL database integration  
+- Tkinter GUI dashboard
+
+## 📂 Project Structure
+```
 face_attendance/
-│── main.py                    # Main script to run face recognition
-│── attendance.py              # Handles attendance logic
-│── recognition.py             # Face recognition logic
-│── db.py                      # Database connection & queries
-│── add_student_gui.py         # GUI to add students
-│── ImagesAttendance/          # Folder containing student images
-│── attendance/                # Attendance log files
-│── app.log                    # Logs for debugging
-│── test_student.py            # Testing add_student function
-│── .gitignore                 # Ignored files
-🔧 Technologies Used
-Backend & Recognition
-Python 3
-OpenCV
+│── main.py
+│── recognition.py
+│── attendance.py
+│── add_student_gui.py
+│── db.py
+│── images/
+│── test_student.py
+│── README.md
+```
+
+## 🛠 Installation
+
+### 1. Install Python (Recommended: Python 3.10)
+
+### 2. Install required packages
+Create requirements.txt:
+```
+opencv-python
 face_recognition
-NumPy
-Database
-MySQL (CRUD operations using mysql-connector-python)
-Interface
-Tkinter (for student registration GUI)
-DevOps Tools (Optional for Deployment)
-Docker (containerize the app)
-GitHub Actions
-AWS EC2 (deploy your server)
-🛠 Installation Guide
-1️⃣ Clone the repository
-git clone git@github.com:adarshsingh3618/face_recognition.git
-cd face_recognition
-2️⃣ Create a Python virtual environment
-python3 -m vvenv venv
-source venv/bin/activate
-3️⃣ Install required packages
+numpy
+mysql-connector-python
+pillow
+```
+
+Install using:
+```
 pip install -r requirements.txt
-🗄 MySQL Database Setup
-1. Start MySQL server
-2. Create a database:
-CREATE DATABASE attendance_system;
-3. Update your DB credentials in db.py
-DB_USER = "your_username"
-DB_PASSWORD = "your_password"
-DB_HOST = "localhost"
-DB_NAME = "attendance_system"
-4. Run the student registration test
-python3 test_student.py
-▶️ Running the Application
-Start face recognition attendance:
-python3 main.py
-Add a new student:
-python3 add_student_gui.py
-📸 Adding Student Images
-Place a clear image of the student's face inside:
-ImagesAttendance/Name.jpg
-Example:
-ImagesAttendance/Adarsh.jpg
-📤 Attendance Export
-Attendance files will be saved in:
-attendance/attendance_YYYY-MM-DD.csv
-Each row contains:
-Student name
-Student ID
-Time
-Date
-🚀 Future Improvements
-Integrate with AWS Rekognition
-Create a web interface (Flask/Django)
-Add QR code backup attendance
-Add role-based access (Admin/Teacher)
-Build Docker support
-Host on EC2 with NGINX
-🤝 Contributions
-Pull requests are welcome!
-If you find bugs or want improvements, feel free to open an issue.
-👨‍💻 Author
-Adarsh Singh
-📧 Email: adarshsingh3618@gmail.com
-🔗 GitHub: https://github.com/adarshsingh3618
-🔗 LinkedIn: https://www.linkedin.com/in/adarshsingh3618
-⭐ Support
-If you like this project, please ⭐ the repo — it motivates continued development!
+```
+
+### 3. Install MySQL and create database
+Run:
+```
+CREATE DATABASE face_attendance;
+CREATE USER 'attendance_user'@'localhost' IDENTIFIED BY 'Admin@123';
+GRANT ALL PRIVILEGES ON face_attendance.* TO 'attendance_user'@'localhost';
+FLUSH PRIVILEGES;
+```
+
+### 4. Initialize the database
+```
+python db.py
+```
+
+### 5. Start the application
+```
+python main.py
+```
+
+## 📸 Adding Students
+Photos must be saved in:
+```
+images/StudentName/photo.jpg
+```
+
+The folder name must match the student's name exactly.
+
+## 🎥 How Recognition Works
+1. System detects face  
+2. Confirms for 2 seconds  
+3. Marks attendance  
+4. Shows confirmation  
+5. Exits smoothly  
+
+## 📦 Running on Another PC
+- Install Python  
+- Install dependencies  
+- Install CMake (if needed)  
+- Install MySQL server  
+- Copy entire project folder  
+- Run:
+```
+python main.py
+```
+
+## 🧠 Notes
+- Use Python 3.8–3.11  
+- Ensure MySQL credentials match `db.py`  
+- Camera is required  
+- Folder structure must not change
+
+## ✅ Enjoy your Face Recognition Attendance System!
