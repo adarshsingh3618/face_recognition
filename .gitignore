@@ -1,0 +1,10 @@
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# Mac system files
+.DS_Store
+
+# Logs
+*.log
